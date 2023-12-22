@@ -86,7 +86,7 @@ public class CakeG implements Listener {
             player.teleport(new Location(player.getWorld(), 100,100, 100));
             player.sendMessage("game starting");
             player.getInventory().addItem(sword, stick);
-            generator.globalGenerate();
+            //generator.globalGenerate();
         }
     }
 }
