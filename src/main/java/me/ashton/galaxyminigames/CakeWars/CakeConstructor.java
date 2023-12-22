@@ -1,5 +1,6 @@
 package me.ashton.galaxyminigames.CakeWars;
 
+import me.ashton.galaxyminigames.CakeWars.Kits.Kit;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -39,6 +40,7 @@ public class CakeConstructor {
     public void setSpectating() {
 
     }
+
 
     public void setStarted(Boolean started) {
         this.started = started;

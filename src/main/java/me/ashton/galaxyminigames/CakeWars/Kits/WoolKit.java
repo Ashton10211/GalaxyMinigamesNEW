@@ -11,14 +11,20 @@ public class WoolKit implements Kit {
 
     private KitManager kitManager;
 
+    public WoolKit(KitManager kitManager) {
+        this.kitManager = kitManager;
+    }
 
+
+
+    //This is only set right now for testing
     @EventHandler
     public void onPlace(BlockPlaceEvent event) {
         Player player = event.getPlayer();
-        WoolKit woolKit = new WoolKit();
-        kitManager.giveKit(player, woolKit);
+        kitManager.giveKit(player, this);
         this.applyKit(player);
     }
+
 
 
     @EventHandler

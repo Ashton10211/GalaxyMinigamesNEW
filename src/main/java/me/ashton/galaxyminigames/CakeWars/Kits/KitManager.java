@@ -17,6 +17,9 @@ public class KitManager {
         playerKits.computeIfAbsent(player, key -> new ArrayList<>()).add(kit);
     }
 
+
+
+
     public List<Kit> getKits(Player player) {
         // Get the list of kits assigned to the player
         return playerKits.getOrDefault(player, Collections.emptyList());
