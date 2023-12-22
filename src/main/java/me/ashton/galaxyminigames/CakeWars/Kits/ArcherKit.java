@@ -19,6 +19,6 @@ public class ArcherKit implements Kit{
 
     @Override
     public void applyKit(Player player) {
-
+        applyArcher(player);
     }
 }

@@ -23,11 +23,12 @@ public class CakeG implements Listener {
     private CakeConstructor cakeConstructor;
     private Generator generator;
     private final KitManager kitManager;
-
+    private final Kit kit;
 
     public CakeG(CakeConstructor cakeConstructor, KitManager kitManager) {
         this.cakeConstructor = cakeConstructor;
         this.kitManager = kitManager;
+        this.kit = kit;
     }
 
     @EventHandler
@@ -86,7 +87,8 @@ public class CakeG implements Listener {
             player.teleport(new Location(player.getWorld(), 100,100, 100));
             player.sendMessage("game starting");
             player.getInventory().addItem(sword, stick);
-            //generator.globalGenerate();
+            generator.onGenerate();
+            kit.applyKit(player);
         }
     }
 }
