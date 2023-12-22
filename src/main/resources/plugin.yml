@@ -1,0 +1,8 @@
+name: GalaxyMinigames
+version: '${project.version}'
+main: me.ashton.galaxyminigames.GalaxyMinigames
+api-version: '1.20'
+commands:
+  game:
+    description: "Gamme types"
+    aliases: "games"
