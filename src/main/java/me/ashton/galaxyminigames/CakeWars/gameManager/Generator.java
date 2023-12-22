@@ -1,11 +1,17 @@
-package me.ashton.galaxyminigames.CakeWars;
+package me.ashton.galaxyminigames.CakeWars.gameManager;
 
 import me.ashton.galaxyminigames.CakeWars.CakeConstructor;
 import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockState;
+import java.util.Map;
+
 import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.inventory.ItemStack;
+
+import java.util.UUID;
 
 public class Generator {
 
@@ -13,18 +19,49 @@ public class Generator {
 
     private CakeConstructor cakeConstructor;
     int Level;
-    public Generator(CakeConstructor cakeConstructor) {
+    public Generator(CakeConstructor cakeConstructor, Map<UUID, Integer> playerLevels) {
+        this.playerLevels = playerLevels;
+        this.cakeConstructor = cakeConstructor;
 
-        this.Level = 1;
 
     }
 
-    public void setLevel(int level) {
-        Level = level;
+
+    private final Map<UUID, Integer> playerLevels;
+
+
+
+
+    public void setPlayerLevels(UUID playerId, int level) {
+        playerLevels.put(playerId, level);
+
+    }
+
+    public int getPlayerLevel(UUID playerId) {
+        return playerLevels.getOrDefault(playerId, 1);
+
     }
 
 
-    public void globalGenerate() {
+    @EventHandler
+    public void onJoin(PlayerJoinEvent event) {
+
+
+        setPlayerLevels(event.getPlayer().getUniqueId(), 2); // this is for testing purposes I want it to be set at 2
+    }
+    public void testGenerate() {
+        for (Player player : Bukkit.getOnlinePlayers()) {
+            if (getPlayerLevel(player.getUniqueId()) == 2) {
+                player.sendMessage("You are level 2");
+            }
+            if (getPlayerLevel(player.getUniqueId()) == 3) {
+                player.sendMessage("You are level 3 (ISLAND)");
+            }
+
+        }
+    }
+}
+   /* public void globalGenerate() {
         if (cakeConstructor.isStarted()) {
             for (World world : Bukkit.getWorlds()) {
                 for (Chunk chunk : world.getLoadedChunks()) {
@@ -33,7 +70,7 @@ public class Generator {
                             Block block = blockState.getBlock();
                             block.getWorld().dropItemNaturally(block.getLocation(), new ItemStack(Material.IRON_INGOT));
                         }
-                        else if(blockState.getType() == Material.IRON_BLOCK) {
+                        else if(blockState.getType() == Material.IRON_BLOCK ) {
                             Block block = blockState.getBlock();
                             block.getWorld().dropItemNaturally(block.getLocation(), new ItemStack(Material.EMERALD));
                         }
@@ -72,8 +109,6 @@ public class Generator {
         }
 
     }
+      */
 
-    public int getLevel() {
-        return Level;
-    }
-}
+
