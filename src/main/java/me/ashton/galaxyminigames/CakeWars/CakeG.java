@@ -1,10 +1,10 @@
 package me.ashton.galaxyminigames.CakeWars;
 
-import me.ashton.galaxyminigames.CakeWars.CakeConstructor;
 import me.ashton.galaxyminigames.CakeWars.Kits.ArcherKit;
 import me.ashton.galaxyminigames.CakeWars.Kits.Kit;
 import me.ashton.galaxyminigames.CakeWars.Kits.KitManager;
 import me.ashton.galaxyminigames.CakeWars.Kits.WoolKit;
+import me.ashton.galaxyminigames.CakeWars.gameManager.Generator;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;

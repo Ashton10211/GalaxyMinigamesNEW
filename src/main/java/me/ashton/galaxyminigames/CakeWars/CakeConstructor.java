@@ -1,6 +1,6 @@
 package me.ashton.galaxyminigames.CakeWars;
 
-import me.ashton.galaxyminigames.CakeWars.Kits.Kit;
+import me.ashton.galaxyminigames.CakeWars.gameManager.Generator;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
