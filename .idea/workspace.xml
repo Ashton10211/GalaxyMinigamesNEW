@@ -4,12 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6442e736-81c0-4635-b203-de942853a07f" name="Changes" comment="Generator redone / loop to be done tomorrow revise code and start working on real mechanics">
+    <list default="true" id="6442e736-81c0-4635-b203-de942853a07f" name="Changes" comment="Kit work">
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/ashton/galaxyminigames/CakeWars/events/Meteor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/ashton/galaxyminigames/CakeWars/gameManager/ChestFills.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/ashton/galaxyminigames/CakeWars/gameManager/ChestStart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/ashton/galaxyminigames/SkyWars/PlayerInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/ashton/galaxyminigames/SkyWars/SkyWars.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/ashton/galaxyminigames/SkyWars/events/playerDead.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/ashton/galaxyminigames/CakeWars/CakeConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/ashton/galaxyminigames/CakeWars/CakeConstructor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/ashton/galaxyminigames/CakeWars/CakeG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/ashton/galaxyminigames/CakeWars/CakeG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/ashton/galaxyminigames/CakeWars/Kits/ArcherKit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/ashton/galaxyminigames/CakeWars/Kits/ArcherKit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/ashton/galaxyminigames/CakeWars/gameManager/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/ashton/galaxyminigames/CakeWars/gameManager/Generator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/ashton/galaxyminigames/CakeWars/CakeCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/ashton/galaxyminigames/CakeWars/CakeConstructor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/ashton/galaxyminigames/CakeWars/CakeG.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/ashton/galaxyminigames/CakeWars/CakeWars.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/ashton/galaxyminigames/CakeWars/Generator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/ashton/galaxyminigames/CakeWars/Kits/KitManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/ashton/galaxyminigames/CakeWars/Kits/KitManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/ashton/galaxyminigames/CakeWars/Kits/WoolKit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/ashton/galaxyminigames/CakeWars/Kits/WoolKit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/ashton/galaxyminigames/GalaxyMinigames.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +30,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -156,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703228608869</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Kit work">
+      <option name="closed" value="true" />
+      <created>1703263222676</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703263222676</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -165,6 +185,7 @@
     <MESSAGE value="Changed up the Generator system // Plan on adding on team levels" />
     <MESSAGE value="Minor changes" />
     <MESSAGE value="Generator redone / loop to be done tomorrow revise code and start working on real mechanics" />
-    <option name="LAST_COMMIT_MESSAGE" value="Generator redone / loop to be done tomorrow revise code and start working on real mechanics" />
+    <MESSAGE value="Kit work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kit work" />
   </component>
 </project>
