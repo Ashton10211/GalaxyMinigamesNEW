@@ -4,6 +4,7 @@ import me.ashton.galaxyminigames.CakeWars.Kits.ArcherKit;
 import me.ashton.galaxyminigames.CakeWars.Kits.Kit;
 import me.ashton.galaxyminigames.CakeWars.Kits.KitManager;
 import me.ashton.galaxyminigames.CakeWars.Kits.WoolKit;
+import me.ashton.galaxyminigames.CakeWars.gameManager.ChestStart;
 import me.ashton.galaxyminigames.CakeWars.gameManager.Generator;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
@@ -24,10 +25,12 @@ public class CakeG implements Listener {
     private Generator generator;
     private final KitManager kitManager;
     private final Kit kit;
+    private final ChestStart chestStart;
 
-    public CakeG(CakeConstructor cakeConstructor, KitManager kitManager) {
+    public CakeG(CakeConstructor cakeConstructor, KitManager kitManager, ChestStart chestStart, Kit kit) {
         this.cakeConstructor = cakeConstructor;
         this.kitManager = kitManager;
+        this.chestStart = chestStart;
         this.kit = kit;
     }
 
@@ -89,6 +92,7 @@ public class CakeG implements Listener {
             player.getInventory().addItem(sword, stick);
             generator.onGenerate();
             kit.applyKit(player);
+            chestStart.gameBegan();
         }
     }
 }
